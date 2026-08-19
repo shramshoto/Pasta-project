@@ -6,6 +6,7 @@ import pygame
 PASTA_IMG=pygame.image.load("pasta.jpg")
 POT=pygame.image.load('pot.png')
 LID=pygame.image.load('lid.png')
+SAUCE_IMG=pygame.image.load('tomato sauce GIF.gif')
 
 
 FONT_NAME = "Handjet"

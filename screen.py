@@ -33,3 +33,7 @@ def draw_stove():
     STOVE_IMG = pygame.transform.scale(consts.STOVE_IMG, consts.STOVE_SIZE1)
     screen.blit(STOVE_IMG, (consts.STOVE_START_LOCATION1))
 
+def draw_sauce():
+    pygame.init()
+    SAUCE_IMG = pygame.transform.scale(consts.SAUCE_IMG, (20, 10))
+    screen.blit(SAUCE_IMG, (20, 30))
