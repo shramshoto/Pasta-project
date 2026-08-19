@@ -1,1 +1,14 @@
-print("BYE")
+import pygame,sys
+import screen
+
+pygame.init()
+clock = pygame.time.Clock()
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+
+    screen.display()
+    clock.tick(60)
