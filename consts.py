@@ -6,3 +6,12 @@ import pygame
 PASTA_IMG=pygame.image.load("pasta.jpg")
 POT=pygame.image.load('pot.png')
 LID=pygame.image.load('lid.png')
+
+
+FONT_NAME = "Handjet"
+MESSAGE_A = "a"
+MESSAGE_B = "b"
+MESSAGE_C = "c"
+FONT_SIZE = int(0.1 * 500)
+FONT_LOCATION = (250, 300)
+COLOR = (255, 20, 8)
