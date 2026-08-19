@@ -1,4 +1,7 @@
 import pygame,sys
+
+import animation
+import consts
 import screen
 
 pygame.init()
@@ -9,6 +12,6 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-
+    animation.lid_open(consts.LID,(500,250))
     screen.display()
     clock.tick(60)
