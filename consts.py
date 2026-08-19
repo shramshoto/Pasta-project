@@ -1,10 +1,11 @@
-BACKGROUND_COLOR=(150,210,230)
+BACKGROUND_COLOR=(255,230,247)
 WINDOW_WIDTH=1000
 WINDOW_HEIGHT=500
 import pygame
 
 '''KITCHEN_IMG=pygame.image.load('kitchen.png')
 KITCHEN_SIZE=(WINDOW_WIDTH,WINDOW_HEIGHT)'''
+SAUCE_IMG=pygame.image.load('tomato sauce GIF.gif')
 
 FRAME_IMG=pygame.image.load('frame.png')
 FRAME_SIZE=(1000,500)
@@ -24,20 +25,8 @@ LID_RECT=LID_IMG.get_rect()
 #LID_SIZE=
 #LID_LOCATION=
 
-PAN_IMG=pygame.image.load('pan.png')
-PAN_RECT=PAN_IMG.get_rect()
-PAN_SIZE=300,250
-PAN_START_LOCATION=120, 162
 
-STOVE_IMG=pygame.image.load('stove.png')
-STOVE_RECT=STOVE_IMG.get_rect()
-STOVE_SIZE=250,100
-STOVE_START_LOCATION=150, 350
-STOVE_SIZE1=250,100
-STOVE_START_LOCATION1=550, 350
-
-
-FONT_NAME = "david"
+FONT_NAME = "Handjet"
 MESSAGE_A = "a"
 MESSAGE_B = "b"
 MESSAGE_C = "c"

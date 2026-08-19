@@ -55,3 +55,7 @@ def draw_message_c():
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE)
     c_img = font.render(consts.MESSAGE_C, True, consts.COLOR)
     screen.blit(c_img, consts.FONT_LOCATION)
+def draw_sauce():
+    pygame.init()
+    SAUCE_IMG = pygame.transform.scale(consts.SAUCE_IMG, (20, 10))
+    screen.blit(SAUCE_IMG, (20, 30))
