@@ -1,3 +1,5 @@
+import Screen1
+
 BACKGROUND_COLOR=(255,230,247)
 WINDOW_WIDTH=1000
 WINDOW_HEIGHT=500
@@ -6,6 +8,18 @@ import pygame
 KITCHEN_IMG=pygame.image.load('kitchen.png')
 KITCHEN_SIZE=(WINDOW_WIDTH,WINDOW_HEIGHT)
 SAUCE_IMG=pygame.image.load('tomato sauce GIF.gif')
+
+EMPTY_SPOON_IMG=pygame.image.load('pouring-1.png')
+FULL_SPOON_IMG=pygame.image.load('pouring-5.png')
+SPOON_WIDTH= EMPTY_SPOON_IMG.get_width()*0.1
+SPOON_HEIGHT=EMPTY_SPOON_IMG.get_height()*0.1
+SPOON_SIZE=(SPOON_WIDTH,SPOON_HEIGHT)
+SPOON_INITIAL_X=400
+SPOON_INITIAL_Y=150
+SPOON_START_LOCATION=(SPOON_INITIAL_X,SPOON_INITIAL_Y)
+SPOON_SECOND_X=500
+SPOON_SECOND_Y=200
+SPOON_SECOND_LOCATION=(SPOON_SECOND_X,SPOON_SECOND_Y)
 
 TOMATO_IMG=pygame.image.load('tomato sauce GIF.gif')
 TOMATO_WIDTH=350
@@ -31,7 +45,7 @@ FONT_LOCATION_RECIPE = (1000, 0)
 COLOR = (255, 255, 255)
 
 
-'''SPOON = {"width": image.get_width()*0.5, "height": image.get_height()*0.5, "obj_x":,"obj_y":,
-"animations": [Screen1.animate_scoop(), Screen1.spoon_move(), Screen1.spoon_pour()],
+SPOON = {"width": SPOON_WIDTH, "height": SPOON_HEIGHT, "obj_x":SPOON_START_LOCATION[0],"obj_y":SPOON_START_LOCATION[1],
+"animations": [Screen1.animate_scoop(), Screen1.draw_full_spoon(), Screen1.animate_pour()],
 "state": True}
-appearance = [SPOON]'''
+appearance = [SPOON]

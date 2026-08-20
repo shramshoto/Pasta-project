@@ -3,6 +3,7 @@ import pygame
 import pour_animation
 import scoop_animation
 import consts
+from consts import FULL_SPOON_IMG
 
 screen=pygame.display.set_mode((consts.WINDOW_WIDTH,consts.WINDOW_HEIGHT))
 
@@ -40,10 +41,20 @@ def draw_message_recipe():
     re_img = font.render(consts.MESSAGE_RECIPE, True, consts.COLOR)
     screen.blit(re_img, consts.FONT_LOCATION_RECIPE)
 
-def draw_sauce():
+
+def draw_empty_spoon():
     pygame.init()
-    SAUCE_IMG = pygame.transform.scale(consts.SAUCE_IMG, (20, 10))
-    screen.blit(SAUCE_IMG, (20, 30))
+    EMPTY_SPOON_IMG=pygame.transform.scale(consts.EMPTY_SPOON_IMG, consts.SPOON_SIZE)
+    screen.blit(EMPTY_SPOON_IMG, consts.SPOON_START_LOCATION)
+
+def draw_full_spoon():
+    pygame.init()
+    FULL_SPOON_IMG=pygame.transform.scale(consts.FULL_SPOON_IMG, consts.SPOON_SIZE)
+    screen.blit(FULL_SPOON_IMG, consts.SPOON_SECOND_LOCATION)
+    consts.SPOON['obj_x']=SPOON_SECOND_LOCATION[0]
+    consts.SPOON['obj_y']=SPOON_SECOND_LOCATION[1]
+
+
 
 def animate_scoop():
     scoop_animation.scoop_sprites.draw(screen)
