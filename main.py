@@ -17,15 +17,12 @@ def mouse_clicking_obj(mx, my):
     return False
 
 def do_animation():
-    '''for i in range(len(spoon.SPOON["animations"])):
-        #if consts.state:
-        spoon.SPOON["animations"][i]'''
-    spoon.animate_scoop()
-    pygame.display.flip()
-    spoon.spoon_move()
-    pygame.display.flip()
-    spoon.animate_pour()
-    pygame.display.flip()
+    if consts.scooping:
+        spoon.animate_scoop()
+    elif consts.pouring:
+        spoon.animate_pour()
+    elif consts.move:
+        spoon.spoon_move()
 
 def write():
     if event.key == pygame.K_1:
@@ -52,17 +49,14 @@ while running:
             if event.type == pygame.QUIT:
                 running = False
 
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                consts.scooping = True
+            #if event.type == pygame.MOUSEBUTTONDOWN:
+
 
             if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    consts.scooping = True
+                    do_animation()
                 write()
-            if consts.scooping:
-                spoon.animate_scoop()
-            elif consts.pouring:
-                spoon.animate_pour()
-            elif consts.move:
-                spoon.spoon_move()
 
     pygame.display.update()
     clock.tick(60)
