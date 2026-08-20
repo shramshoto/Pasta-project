@@ -32,7 +32,7 @@ def draw_message_c():
     c_img = font.render(consts.MESSAGE_C, True, consts.COLOR)
     screen.blit(c_img, consts.FONT_LOCATION)
     collage_img = pygame.transform.scale(consts.collage_img, consts.TOMATO_SIZE)
-    screen.blit(collage_img, (354, 347))
+    screen.blit(collage_img, (344, 330))
 
 def draw_message_recipe():
     pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(900, 10, 100, 200))
