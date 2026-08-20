@@ -3,11 +3,35 @@ WINDOW_WIDTH=1000
 WINDOW_HEIGHT=500
 import pygame
 
-PASTA_IMG=pygame.image.load("pasta.jpg")
-POT=pygame.image.load('pot.png')
-LID=pygame.image.load('lid.png')
+'''KITCHEN_IMG=pygame.image.load('kitchen.png')
+KITCHEN_SIZE=(WINDOW_WIDTH,WINDOW_HEIGHT)'''
 SAUCE_IMG=pygame.image.load('tomato sauce GIF.gif')
 
+FRAME_IMG=pygame.image.load('frame.png')
+FRAME_SIZE=(1000,500)
+
+PASTA_IMG=pygame.image.load("pasta.png")
+PASTA_RECT=PASTA_IMG.get_rect()
+PASTA_WIDTH = 150
+PASTA_HEIGHT = 60
+PASTA_SIZE=(PASTA_WIDTH, PASTA_HEIGHT)
+PASTA_INITIAL_X = 850
+PASTA_INITIAL_Y = 100
+PASTA_START_LOCATION=PASTA_INITIAL_X, PASTA_INITIAL_Y
+
+POT_IMG=pygame.image.load('pot1.png')
+POT_RECT=POT_IMG.get_rect()
+POT_WIDTH = 300
+POT_HEIGHT = 250
+POT_SIZE= POT_WIDTH, POT_HEIGHT
+POT_INITIAL_X = 500
+POT_INITIAL_Y = 180
+POT_START_LOCATION=POT_INITIAL_X, POT_INITIAL_Y
+
+LID_IMG=pygame.image.load('lid.png')
+LID_RECT=LID_IMG.get_rect()
+#LID_SIZE=
+#LID_LOCATION=
 
 FONT_NAME = "Calibri"
 MESSAGE_A = "a"
@@ -16,3 +40,8 @@ MESSAGE_C = "c"
 FONT_SIZE = int(0.1 * 500)
 FONT_LOCATION = (250, 300)
 COLOR = (255, 20, 8)
+
+'''PASTA = {"width":PASTA_WIDTH, "height":PASTA_HEIGHT, "obj_x":PASTA_INITIAL_X, "obj_y":PASTA_INITIAL_Y}
+POT = {"width":POT_WIDTH, "height":POT_HEIGHT, "obj_x":POT_INITIAL_X, "obj_y":POT_INITIAL_Y}
+LID = {"width":, "height":, "obj_x":, "obj_y":}
+appearance = [LID, LADLE]'''
