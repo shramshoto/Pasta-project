@@ -2,22 +2,26 @@ import consts
 import pour_animation
 import scoop_animation
 import Screen1
-
+import pygame
 
 def animate_scoop():
-    SPOON["state"] = True
+    consts.state = True
     scoop_animation.scoop_sprites.draw(Screen1.screen)
     scoop_animation.scoop_sprites.update()
 
 def animate_pour():
-    SPOON["state"] = True
+    consts.state = True
     pour_animation.pour_sprites.draw(Screen1.screen)
     pour_animation.pour_sprites.update()
 
 def spoon_move():
-    Screen1.draw_full_spoon()
+    pygame.init()
+    FULL_SPOON_IMG=pygame.transform.scale(consts.FULL_SPOON_IMG, consts.SPOON_SIZE)
+    consts.SPOON_LOCATION=(consts.SPOON_SECOND_X,consts.SPOON_SECOND_Y)
+    Screen1.screen.blit(FULL_SPOON_IMG, consts.SPOON_LOCATION)
 
-SPOON = {"width": consts.SPOON_WIDTH, "height":consts.SPOON_HEIGHT, "obj_x":consts.SPOON_START_LOCATION[0],
-         "obj_y":consts.SPOON_START_LOCATION[1],
-        "animations": [animate_scoop(),spoon_move(), animate_pour()],
-        "state": True}
+
+
+SPOON = {"width": consts.SPOON_WIDTH, "height":consts.SPOON_HEIGHT, "obj_x":consts.SPOON_LOCATION[0],
+         "obj_y":consts.SPOON_LOCATION[1],
+        "animations": [animate_scoop(),spoon_move(), animate_pour()]}

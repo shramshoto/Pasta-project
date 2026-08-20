@@ -1,6 +1,7 @@
 import pygame
 import consts
 
+
 screen=pygame.display.set_mode((consts.WINDOW_WIDTH,consts.WINDOW_HEIGHT))
 
 def draw_kitchen():
@@ -45,12 +46,7 @@ def draw_empty_spoon():
     EMPTY_SPOON_IMG=pygame.transform.scale(consts.EMPTY_SPOON_IMG, consts.SPOON_SIZE)
     screen.blit(EMPTY_SPOON_IMG, consts.SPOON_START_LOCATION)
 
-def draw_full_spoon():
-    pygame.init()
-    FULL_SPOON_IMG=pygame.transform.scale(consts.FULL_SPOON_IMG, consts.SPOON_SIZE)
-    screen.blit(FULL_SPOON_IMG, consts.SPOON_SECOND_LOCATION)
-    consts.SPOON['obj_x']=consts.SPOON_SECOND_LOCATION[0]
-    consts.SPOON['obj_y']=consts.SPOON_SECOND_LOCATION[1]
+
 
 
 

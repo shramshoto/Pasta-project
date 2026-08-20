@@ -4,22 +4,22 @@ BACKGROUND_COLOR=(255,230,247)
 WINDOW_WIDTH=1000
 WINDOW_HEIGHT=500
 import pygame
+state = False
 
 KITCHEN_IMG=pygame.image.load('kitchen.png')
 KITCHEN_SIZE=(WINDOW_WIDTH,WINDOW_HEIGHT)
 SAUCE_IMG=pygame.image.load('tomato sauce GIF.gif')
 
-EMPTY_SPOON_IMG=pygame.image.load('pouring-1.png')
-FULL_SPOON_IMG=pygame.image.load('pouring-5.png')
+EMPTY_SPOON_IMG=pygame.image.load('pouring/pouring-1.png')
+FULL_SPOON_IMG=pygame.image.load('pouring/pouring-5.png')
 SPOON_WIDTH= EMPTY_SPOON_IMG.get_width()*0.1
 SPOON_HEIGHT=EMPTY_SPOON_IMG.get_height()*0.1
 SPOON_SIZE=(SPOON_WIDTH,SPOON_HEIGHT)
 SPOON_INITIAL_X=400
 SPOON_INITIAL_Y=150
-SPOON_START_LOCATION=(SPOON_INITIAL_X,SPOON_INITIAL_Y)
+SPOON_LOCATION=(SPOON_INITIAL_X,SPOON_INITIAL_Y)
 SPOON_SECOND_X=500
 SPOON_SECOND_Y=200
-SPOON_SECOND_LOCATION=(SPOON_SECOND_X,SPOON_SECOND_Y)
 
 TOMATO_IMG=pygame.image.load('tomato sauce GIF.gif')
 TOMATO_WIDTH=350

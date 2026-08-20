@@ -1,11 +1,11 @@
 import pygame
 import Screen1
-import consts
+import spoon
 
 clock = pygame.time.Clock()
 running = True
 num = 0
-max_num = len(consts.appearance)
+max_num = len(spoon.SPOON)
 
 def mouse_clicking_obj(num, mx, my, list):
     if list[num]["obj_x"]<mx<list[num]["obj_x"]+list[num]["width"] \
