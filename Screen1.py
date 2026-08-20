@@ -46,9 +46,11 @@ def draw_sauce():
     screen.blit(SAUCE_IMG, (20, 30))
 
 def animate_scoop():
+    consts.SPOON["state"] = True
     scoop_animation.scoop_sprites.draw(screen)
     scoop_animation.scoop_sprites.update()
 
 def animate_pour():
+    consts.SPOON["state"] = True
     pour_animation.pour_sprites.draw(screen)
     pour_animation.pour_sprites.update()

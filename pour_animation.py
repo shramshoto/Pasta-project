@@ -1,4 +1,6 @@
 import pygame
+import consts
+
 
 class pour(pygame.sprite.Sprite):
     def __init__(pour, pos_x, pos_y):
@@ -22,7 +24,8 @@ class pour(pygame.sprite.Sprite):
         self.current_sprite += 0.1
 
         if self.current_sprite >= len(self.pour_sprites):
-                self.current_sprite = 0
+            self.current_sprite = 0
+            consts.SPOON["state"] = True
 
         self.image = self.pour_sprites[int(self.current_sprite)]
 

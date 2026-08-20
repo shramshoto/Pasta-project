@@ -1,4 +1,7 @@
 import pygame
+import consts
+
+
 
 class scoop(pygame.sprite.Sprite):
     def __init__(scoop, pos_x, pos_y):
@@ -27,7 +30,8 @@ class scoop(pygame.sprite.Sprite):
         self.current_sprite += 0.01
 
         if self.current_sprite >= len(self.scoop_sprites):
-                self.current_sprite = 0
+            self.current_sprite = 0
+            consts.SPOON["state"] = False
 
         self.image = self.scoop_sprites[int(self.current_sprite)]
 
