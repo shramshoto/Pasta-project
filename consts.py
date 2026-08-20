@@ -32,5 +32,6 @@ COLOR = (255, 255, 255)
 
 
 '''SPOON = {"width": image.get_width()*0.5, "height": image.get_height()*0.5, "obj_x":,"obj_y":,
-"animations": [Screen1.animate_scoop(), Screen1.spoon_move(), Screen1.spoon_pour()]}
+"animations": [Screen1.animate_scoop(), Screen1.spoon_move(), Screen1.spoon_pour()],
+"state": True}
 appearance = [SPOON]'''
