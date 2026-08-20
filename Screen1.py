@@ -35,11 +35,13 @@ def draw_message_c():
     collage_img = pygame.transform.scale(consts.collage_img, consts.TOMATO_SIZE)
     screen.blit(collage_img, (330, 300))
 
+
 def draw_message_recipe():
     pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(900, 10, 100, 200))
-    font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE_SMALL)
+    '''font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE_SMALL)
     re_img = font.render(consts.MESSAGE_RECIPE, True, consts.COLOR)
-    screen.blit(re_img, consts.FONT_LOCATION_RECIPE)
+    screen.blit(re_img, consts.FONT_LOCATION_RECIPE)'''
+    recipe_img = pygame.image.load(
 
 
 def draw_empty_spoon():
