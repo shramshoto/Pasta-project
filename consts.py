@@ -25,8 +25,8 @@ MESSAGE_RECIPE = "מצרכים:\n פסטה,\n מים,\n מלח,\n לרוטב:\n 
 FONT_SIZE_SMALL = int(0.02 * 500)
 FONT_SIZE = int(0.05 * 500)
 
-FONT_LOCATION = (970, 70)
-FONT_LOCATION_RECIPE = (1000, 0)
+FONT_LOCATION = (70, 70)
+FONT_LOCATION_RECIPE = (910, 20)
 
 COLOR = (255, 255, 255)
 
