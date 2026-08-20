@@ -2,6 +2,7 @@ import pygame
 import consts
 
 
+
 class pour(pygame.sprite.Sprite):
     def __init__(pour, pos_x, pos_y):
         super().__init__()
@@ -25,10 +26,10 @@ class pour(pygame.sprite.Sprite):
 
         if self.current_sprite >= len(self.pour_sprites):
             self.current_sprite = 0
-            consts.SPOON["state"] = True
+            consts.state = True
 
         self.image = self.pour_sprites[int(self.current_sprite)]
 
 pour_sprites = pygame.sprite.Group()
-pour = pour(100, 100)
+pour = pour(consts.SPOON_SECOND_X,consts.SPOON_SECOND_Y)
 pour_sprites.add(pour)
