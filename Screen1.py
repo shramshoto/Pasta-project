@@ -6,8 +6,6 @@ import consts
 
 screen=pygame.display.set_mode((consts.WINDOW_WIDTH,consts.WINDOW_HEIGHT))
 
-'''def draw_kitchen():
-screen.fill(consts.BACKGROUND_COLOR)
 def draw_kitchen():
     pygame.init()
     KITCHEN_IMG=pygame.transform.scale(consts.KITCHEN_IMG, consts.KITCHEN_SIZE)
@@ -17,7 +15,6 @@ def draw_tomato():
     pygame.init()
     TOMATO_IMG=pygame.transform.scale(consts.TOMATO_IMG, consts.TOMATO_SIZE)
     screen.blit(TOMATO_IMG, consts.TOMATO_START_LOCATION)
-
 
 def draw_message_a():
     pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(50, 50, 900, 400))
@@ -38,6 +35,7 @@ def draw_message_c():
     screen.blit(c_img, consts.FONT_LOCATION)
 
 def draw_message_recipe():
+    pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(1000, 0, 100, 200))
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE_SMALL)
     re_img = font.render(consts.MESSAGE_RECIPE, True, consts.COLOR)
     screen.blit(re_img, consts.FONT_LOCATION_RECIPE)
