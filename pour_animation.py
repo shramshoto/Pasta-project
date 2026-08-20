@@ -24,7 +24,7 @@ class pour(pygame.sprite.Sprite):
         pour.rect.topleft = [pos_x, pos_y]
 
     def update(self):
-        self.current_sprite += 0.1
+        self.current_sprite += 1
 
         if self.current_sprite >= len(self.pour_sprites):
             self.current_sprite = 0

@@ -4,7 +4,7 @@ import spoon
 import consts
 
 clock = pygame.time.Clock()
-running = True
+
 num = 0
 max_num = len(spoon.SPOON)
 
@@ -26,7 +26,6 @@ def do_animation():
 
 def write():
     if event.key == pygame.K_1:
-        print(1)
         Screen1.draw_message_a()
         pygame.display.flip()
     elif event.key == pygame.K_2:
@@ -36,32 +35,31 @@ def write():
         Screen1.draw_message_c()
         pygame.display.flip()
 
+
+running = True
 while running:
 
     pygame.init()
     Screen1.drew_screen()
     Screen1.draw_empty_spoon()
     pygame.display.flip()
+    consts.scooping = True
 
-    while num < max_num:
-
+    while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
 
-            #if event.type == pygame.MOUSEBUTTONDOWN:
-
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                do_animation()
 
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:
-                    consts.scooping = True
-                    do_animation()
                 write()
 
-    pygame.display.update()
-    clock.tick(60)
-else:
-    running = False
+        pygame.display.update()
+        clock.tick(60)
 
 pygame.quit()
+
+
 

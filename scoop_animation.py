@@ -27,12 +27,12 @@ class scoop(pygame.sprite.Sprite):
 
 
     def update(self):
-        self.current_sprite += 0.1
+        self.current_sprite += 1
 
         if self.current_sprite >= len(self.scoop_sprites):
             self.current_sprite = 0
-            consts.scooping= False
-            consts.move = True
+            consts.scooping=False
+
 
         self.image = self.scoop_sprites[int(self.current_sprite)]
 
