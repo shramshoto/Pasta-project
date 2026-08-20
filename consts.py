@@ -2,7 +2,11 @@ BACKGROUND_COLOR=(255,230,247)
 WINDOW_WIDTH=1000
 WINDOW_HEIGHT=500
 import pygame
-state = False
+
+#state={"pouring": False,"scooping":False,"move":False}
+pouring = False
+scooping = False
+move = False
 
 KITCHEN_IMG=pygame.image.load('kitchen.png')
 KITCHEN_SIZE=(WINDOW_WIDTH,WINDOW_HEIGHT)
