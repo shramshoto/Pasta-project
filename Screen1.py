@@ -1,8 +1,12 @@
 import pygame
+
+import pour_animation
+import scoop_animation
 import consts
 
 screen=pygame.display.set_mode((consts.WINDOW_WIDTH,consts.WINDOW_HEIGHT))
-screen.fill(consts.BACKGROUND_COLOR)
+def screen_fill():
+    screen.fill(consts.BACKGROUND_COLOR)
 '''def draw_kitchen():
     pygame.init()
     KITCHEN_IMG=pygame.transform.scale(consts.KITCHEN_IMG, consts.KITCHEN_SIZE)
@@ -65,3 +69,11 @@ def draw_sauce():
     pygame.init()
     SAUCE_IMG = pygame.transform.scale(consts.SAUCE_IMG, (20, 10))
     screen.blit(SAUCE_IMG, (20, 30))
+
+def animate_scoop():
+    scoop_animation.scoop_sprites.draw(screen)
+    scoop_animation.scoop_sprites.update()
+
+def animate_pour():
+    pour_animation.pour_sprites.draw(screen)
+    pour_animation.pour_sprites.update()
