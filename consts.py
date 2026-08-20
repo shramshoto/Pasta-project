@@ -15,47 +15,6 @@ TOMATO_INITIAL_X=465
 TOMATO_INITIAL_Y=160
 TOMATO_START_LOCATION=TOMATO_INITIAL_X, TOMATO_INITIAL_Y
 
-'''PASTA_IMG=pygame.image.load("pasta.png")
-PASTA_RECT=PASTA_IMG.get_rect()
-PASTA_WIDTH = 150
-PASTA_HEIGHT = 60
-PASTA_SIZE=(PASTA_WIDTH, PASTA_HEIGHT)
-PASTA_INITIAL_X = 850
-PASTA_INITIAL_Y = 100
-PASTA_START_LOCATION=PASTA_INITIAL_X, PASTA_INITIAL_Y
-
-POT_IMG=pygame.image.load('pot1.png')
-POT_RECT=POT_IMG.get_rect()
-POT_WIDTH = 300
-POT_HEIGHT = 250
-POT_SIZE= POT_WIDTH, POT_HEIGHT
-POT_INITIAL_X = 500
-POT_INITIAL_Y = 180
-POT_START_LOCATION=POT_INITIAL_X, POT_INITIAL_Y
-
-PAN_IMG=pygame.image.load('pan.png')
-PAN_RECT=PAN_IMG.get_rect()
-PAN_WIDTH=250
-PAN_HEIGHT=200
-PAN_SIZE=(PAN_WIDTH, PAN_HEIGHT)
-PAN_INITIAL_X=800
-PAN_INITIAL_Y=180
-PAN_START_LOCATION=PAN_INITIAL_X, PAN_INITIAL_Y
-
-STOVE_IMG=pygame.image.load('stove.png')
-STOVE_RECT=STOVE_IMG.get_rect()
-STOVE_WIDTH=150
-STOVE_HEIGHT=100
-STOVE_SIZE=(STOVE_WIDTH, STOVE_HEIGHT)
-STOVE_INITIAL_X1 = 800
-STOVE_INITIAL_Y1 = 400
-STOVE_START_LOCATION=STOVE_INITIAL_X1, STOVE_INITIAL_Y1
-
-STOVE_INITIAL_X2 = 500
-STOVE_INITIAL_Y2 = 100
-STOVE_START_LOCATION1=STOVE_INITIAL_X2, STOVE_INITIAL_Y2'''
-
-
 FONT_NAME = "Calibri"
 MESSAGE_A =  "אמולסיה (Emulsion) היא תערובת יציבה בין שני נוזלים שאינם מתערבבים באופן טבעי – כמו שמן ומים.\n רטבים אמולסיביים כמו אליו אה אוליו, פסטו וקרבונרה לרוב כוללים בתוכם גורם מחבר (מתחלב) כמו יין, ביצה, לימון או חומץ ומסתמכים עליהם ללכוד את השמן ולחבר בינו לבין השאר."
 
@@ -72,7 +31,7 @@ FONT_LOCATION_RECIPE = (1000, 0)
 COLOR = (255, 255, 255)
 
 
-'''PASTA = {"width":PASTA_WIDTH, "height":PASTA_HEIGHT, "obj_x":PASTA_INITIAL_X, "obj_y":PASTA_INITIAL_Y}
-POT = {"width":POT_WIDTH, "height":POT_HEIGHT, "obj_x":POT_INITIAL_X, "obj_y":POT_INITIAL_Y}
-LID = {"width":, "height":, "obj_x":, "obj_y":}
-appearance = [LID, LADLE]'''
+'''SPOON = {"width": image.get_width()*0.5, "height": image.get_height()*0.5, "obj_x":,"obj_y":,
+"animations": [Screen1.animate_scoop(), Screen1.spoon_move(), Screen1.spoon_pour()],
+"state": True}
+appearance = [SPOON]'''

@@ -1,7 +1,12 @@
 import pygame
+
+import pour_animation
+import scoop_animation
 import consts
 
 screen=pygame.display.set_mode((consts.WINDOW_WIDTH,consts.WINDOW_HEIGHT))
+
+'''def draw_kitchen():
 screen.fill(consts.BACKGROUND_COLOR)
 def draw_kitchen():
     pygame.init()
@@ -12,30 +17,6 @@ def draw_tomato():
     pygame.init()
     TOMATO_IMG=pygame.transform.scale(consts.TOMATO_IMG, consts.TOMATO_SIZE)
     screen.blit(TOMATO_IMG, consts.TOMATO_START_LOCATION)
-
-'''def draw_pasta():
-    pygame.init()
-    PASTA_IMG=pygame.transform.scale(consts.PASTA_IMG, consts.PASTA_SIZE)
-    screen.blit(PASTA_IMG, (consts.PASTA_START_LOCATION) )
-    pygame.display.update()'''
-
-'''def draw_pot():
-    pygame.init()
-    POT_IMG=pygame.transform.scale(consts.POT_IMG, consts.POT_SIZE)
-    screen.blit(POT_IMG, (consts.POT_START_LOCATION))
-
-def draw_pan():
-    pygame.init()
-    PAN_IMG=pygame.transform.scale(consts.PAN_IMG, consts.PAN_SIZE)
-    screen.blit(PAN_IMG, (consts.PAN_START_LOCATION))
-
-def draw_stove():
-    pygame.init()
-    STOVE_IMG=pygame.transform.scale(consts.STOVE_IMG, consts.STOVE_SIZE)
-    screen.blit(STOVE_IMG, (consts.STOVE_START_LOCATION))
-
-    STOVE_IMG = pygame.transform.scale(consts.STOVE_IMG, consts.STOVE_SIZE1)
-    screen.blit(STOVE_IMG, (consts.STOVE_START_LOCATION1))'''
 
 
 def draw_message_a():
@@ -66,3 +47,10 @@ def draw_sauce():
     SAUCE_IMG = pygame.transform.scale(consts.SAUCE_IMG, (20, 10))
     screen.blit(SAUCE_IMG, (20, 30))
 
+def animate_scoop():
+    scoop_animation.scoop_sprites.draw(screen)
+    scoop_animation.scoop_sprites.update()
+
+def animate_pour():
+    pour_animation.pour_sprites.draw(screen)
+    pour_animation.pour_sprites.update()
