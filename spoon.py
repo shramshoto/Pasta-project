@@ -9,12 +9,14 @@ import pygame
 def animate_scoop():
     Screen1.drew_screen()
     scoop_animation.scoop_sprites.draw(Screen1.screen)
+    pygame.display.flip()
     scoop_animation.scoop_sprites.update()
 
 def animate_pour():
     consts.state = True
     Screen1.drew_screen()
     pour_animation.pour_sprites.draw(Screen1.screen)
+    pygame.display.flip()
     pour_animation.pour_sprites.update()
 
 def spoon_move():

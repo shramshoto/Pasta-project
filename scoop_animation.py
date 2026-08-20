@@ -27,7 +27,7 @@ class scoop(pygame.sprite.Sprite):
 
 
     def update(self):
-        self.current_sprite += 0.01
+        self.current_sprite += 0.1
 
         if self.current_sprite >= len(self.scoop_sprites):
             self.current_sprite = 0
