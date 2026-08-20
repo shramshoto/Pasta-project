@@ -26,9 +26,6 @@ while running:
         running = False
 
     pygame.display.update()
-    Screen1.draw_pot()
-    Screen1.draw_pan()
-    Screen1.draw_stove()
     '''Screen1.draw_message_a()
         Screen1.draw_message_b()
         Screen1.draw_message_c()'''
