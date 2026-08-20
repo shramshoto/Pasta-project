@@ -3,10 +3,15 @@ import consts
 
 screen=pygame.display.set_mode((consts.WINDOW_WIDTH,consts.WINDOW_HEIGHT))
 screen.fill(consts.BACKGROUND_COLOR)
-'''def draw_kitchen():
+def draw_kitchen():
     pygame.init()
     KITCHEN_IMG=pygame.transform.scale(consts.KITCHEN_IMG, consts.KITCHEN_SIZE)
-    screen.blit(KITCHEN_IMG, (0,0))'''
+    screen.blit(KITCHEN_IMG, (0,0))
+
+def draw_tomato():
+    pygame.init()
+    TOMATO_IMG=pygame.transform.scale(consts.TOMATO_IMG, consts.TOMATO_SIZE)
+    screen.blit(TOMATO_IMG, consts.TOMATO_START_LOCATION)
 
 '''def draw_pasta():
     pygame.init()
@@ -14,7 +19,7 @@ screen.fill(consts.BACKGROUND_COLOR)
     screen.blit(PASTA_IMG, (consts.PASTA_START_LOCATION) )
     pygame.display.update()'''
 
-def draw_pot():
+'''def draw_pot():
     pygame.init()
     POT_IMG=pygame.transform.scale(consts.POT_IMG, consts.POT_SIZE)
     screen.blit(POT_IMG, (consts.POT_START_LOCATION))
@@ -31,11 +36,6 @@ def draw_stove():
 
     STOVE_IMG = pygame.transform.scale(consts.STOVE_IMG, consts.STOVE_SIZE1)
     screen.blit(STOVE_IMG, (consts.STOVE_START_LOCATION1))
-
-def draw_frame():
-    pygame.init()
-    FRAME_IMG=pygame.transform.scale(consts.FRAME_IMG, consts.FRAME_SIZE)
-    screen.blit(FRAME_IMG)
 
 
 def draw_message_a():
@@ -54,14 +54,10 @@ def draw_message_c():
     pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(50, 50, 900, 400))
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE)
     c_img = font.render(consts.MESSAGE_C, True, consts.COLOR)
-    screen.blit(c_img, consts.FONT_LOCATION)
+    screen.blit(c_img, consts.FONT_LOCATION)'''
 
 def draw_message_recipe():
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE_SMALL)
     re_img = font.render(consts.MESSAGE_RECIPE, True, consts.COLOR)
     screen.blit(re_img, consts.FONT_LOCATION_RECIPE)
 
-def draw_sauce():
-    pygame.init()
-    SAUCE_IMG = pygame.transform.scale(consts.SAUCE_IMG, (20, 10))
-    screen.blit(SAUCE_IMG, (20, 30))
