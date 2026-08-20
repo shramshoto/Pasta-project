@@ -11,13 +11,16 @@ def animate_scoop():
     scoop_animation.scoop_sprites.draw(Screen1.screen)
     pygame.display.flip()
     scoop_animation.scoop_sprites.update()
+    consts.move=True
+
 
 def animate_pour():
-    consts.state = True
     Screen1.drew_screen()
     pour_animation.pour_sprites.draw(Screen1.screen)
     pygame.display.flip()
     pour_animation.pour_sprites.update()
+    consts.pouring=False
+
 
 def spoon_move():
     pygame.init()
@@ -25,8 +28,9 @@ def spoon_move():
     FULL_SPOON_IMG=pygame.transform.scale(consts.FULL_SPOON_IMG, consts.SPOON_SIZE)
     consts.SPOON_LOCATION=(consts.SPOON_SECOND_X,consts.SPOON_SECOND_Y)
     Screen1.screen.blit(FULL_SPOON_IMG, consts.SPOON_LOCATION)
-    consts.move = False
-    consts.pouring = True
+    consts.move=False
+    consts.pouring=True
+
 
 
 
