@@ -43,5 +43,5 @@ COLOR = (0, 0, 0)
 
 
 collage_img = pygame.image.load('collage.jpeg')
-COLLAGE_SIZE = (6144*0.05, 1536*0.05)
+COLLAGE_SIZE = (6144*0.08, 1536*0.08)
 
