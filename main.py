@@ -29,6 +29,7 @@ def do_animation():
 
 def write():
     if event.key == pygame.K_1:
+        print(1)
         Screen1.draw_message_a()
         pygame.display.flip()
     elif event.key == pygame.K_2:
@@ -50,24 +51,23 @@ while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-            elif event.type == pygame.MOUSEBUTTONDOWN:
+
+            if event.type == pygame.MOUSEBUTTONDOWN:
                 consts.scooping = True
 
-                if consts.scooping:
-                    spoon.animate_pour()
-                elif consts.pouring:
-                    spoon.animate_scoop()
-                elif consts.move:
-                    spoon.spoon_move()
-
-            elif event.type == pygame.KEYDOWN:
+            if event.type == pygame.KEYDOWN:
                 write()
-
-    else:
-        running = False
+            if consts.scooping:
+                spoon.animate_scoop()
+            elif consts.pouring:
+                spoon.animate_pour()
+            elif consts.move:
+                spoon.spoon_move()
 
     pygame.display.update()
     clock.tick(60)
+else:
+    running = False
 
 pygame.quit()
 

@@ -44,7 +44,7 @@ def draw_message_recipe():
 def draw_empty_spoon():
     pygame.init()
     EMPTY_SPOON_IMG=pygame.transform.scale(consts.EMPTY_SPOON_IMG, consts.SPOON_SIZE)
-    screen.blit(EMPTY_SPOON_IMG, consts.SPOON_LOCATION)
+    screen.blit(EMPTY_SPOON_IMG, (consts.SPOON_INITIAL_X,consts.SPOON_INITIAL_Y))
 
 def drew_screen():
     draw_kitchen()

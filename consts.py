@@ -21,7 +21,7 @@ SPOON_INITIAL_X=250
 SPOON_INITIAL_Y=75
 SPOON_LOCATION=(SPOON_INITIAL_X,SPOON_INITIAL_Y)
 SPOON_SECOND_X=500
-SPOON_SECOND_Y=200
+SPOON_SECOND_Y=150
 
 TOMATO_IMG=pygame.image.load('tomato sauce GIF.gif')
 TOMATO_WIDTH=350
@@ -31,7 +31,7 @@ TOMATO_INITIAL_X=465
 TOMATO_INITIAL_Y=160
 TOMATO_START_LOCATION=TOMATO_INITIAL_X, TOMATO_INITIAL_Y
 
-FONT_NAME = "Solitreo"
+FONT_NAME = "Calibri"
 MESSAGE_A =   "אמולסיה (Emulsion) היא תערובת יציבה בין שני נוזלים שאינם מתערבבים באופן טבעי – כמו שמן ומים.\n רטבים אמולסיביים כמו אליו אה אוליו, פסטו וקרבונרה לרוב כוללים בתוכם גורם מחבר (מתחלב)\n כמו יין, ביצה, לימון או חומץ ומסתמכים עליהם ללכוד את השמן ולחבר בינו לבין השאר."
 
 MESSAGE_B = "אם הרוטב מכיל מעל 18% שמן *ללא* מתחלבים, הוא ייפרד אלא אם כן פני הפסטה יספקו מספיק מקומות עיגון.\n לדוגמה - הרוטב שלנו, רוטב עגבניות.\n ומה שמספק את מקומות העיגון האלו לרוטב העגבניות הוא העמילן שעל פני הפסטה וגם במים בהם בישלו אותה.\n חשוב לשמור עליו בזמן הבישול אחרת הרוטב לא יידבק וישחה בצלחת אחרי שכבר סיימתם לאכול." [::-1]
