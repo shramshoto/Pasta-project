@@ -7,6 +7,12 @@ running = True
 num = 0
 max_num = len(consts.appearance)
 
+def mouse_clicking_obj(num, mx, my, list):
+    if list[num]["obj_x"]<mx<list[num]["obj_x"]+list[num]["width"] \
+        and list[num]["obj_y"]<my<list[num]["obj_y"]+list[num]["height"]:
+        return True
+    return False
+
 while running:
     pygame.init()
     pygame.display.flip()
@@ -33,11 +39,6 @@ while running:
 
 pygame.quit()
 
-def mouse_clicking_obj(num, mx, my, list):
-    if list[num]["obj_x"]<mx<list[num]["obj_x"]+list[num]["width"] \
-        and list[num]["obj_y"]<my<list[num]["obj_y"]+list[num]["height"]:
-        return True
-    return False
 
 def do_animation(list, num):
     for i in range(len(list[num]["animations"])):
