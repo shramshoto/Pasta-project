@@ -44,3 +44,6 @@ FONT_LOCATION_RECIPE = (910, 20)
 COLOR = (255, 255, 255)
 
 
+collage_img = pygame.image.load('collage.jpeg')
+COLLAGE_SIZE = (6144*0.05, 1536*0.05)
+
