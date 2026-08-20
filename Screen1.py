@@ -35,7 +35,7 @@ def draw_message_c():
     screen.blit(c_img, consts.FONT_LOCATION)
 
 def draw_message_recipe():
-    pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(1000, 0, 100, 200))
+    pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(900, 10, 100, 200))
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE_SMALL)
     re_img = font.render(consts.MESSAGE_RECIPE, True, consts.COLOR)
     screen.blit(re_img, consts.FONT_LOCATION_RECIPE)
@@ -54,3 +54,4 @@ def animate_pour():
     consts.SPOON["state"] = True
     pour_animation.pour_sprites.draw(screen)
     pour_animation.pour_sprites.update()
+
