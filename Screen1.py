@@ -16,7 +16,6 @@ def draw_tomato():
     TOMATO_IMG=pygame.transform.scale(consts.TOMATO_IMG, consts.TOMATO_SIZE)
     screen.blit(TOMATO_IMG, consts.TOMATO_START_LOCATION)
 
-
 def draw_message_a():
     pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(50, 50, 900, 400))
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE)
@@ -47,10 +46,12 @@ def draw_sauce():
     screen.blit(SAUCE_IMG, (20, 30))
 
 def animate_scoop():
+    consts.SPOON["state"] = True
     scoop_animation.scoop_sprites.draw(screen)
     scoop_animation.scoop_sprites.update()
 
 def animate_pour():
+    consts.SPOON["state"] = True
     pour_animation.pour_sprites.draw(screen)
     pour_animation.pour_sprites.update()
 
