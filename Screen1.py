@@ -34,8 +34,8 @@ def draw_stove():
     STOVE_IMG=pygame.transform.scale(consts.STOVE_IMG, consts.STOVE_SIZE)
     screen.blit(STOVE_IMG, (consts.STOVE_START_LOCATION))
 
-    STOVE_IMG = pygame.transform.scale(consts.STOVE_IMG, consts.STOVE_SIZE)
-    screen.blit(STOVE_IMG, (consts.STOVE_START_LOCATION1))'''
+    STOVE_IMG = pygame.transform.scale(consts.STOVE_IMG, consts.STOVE_SIZE1)
+    screen.blit(STOVE_IMG, (consts.STOVE_START_LOCATION1))
 
 
 def draw_message_a():
@@ -54,9 +54,10 @@ def draw_message_c():
     screen.fill(consts.BACKGROUND_COLOR)
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE)
     c_img = font.render(consts.MESSAGE_C, True, consts.COLOR)
-    screen.blit(c_img, consts.FONT_LOCATION)
+    screen.blit(c_img, consts.FONT_LOCATION)'''
 
-def draw_sauce():
-    pygame.init()
-    SAUCE_IMG = pygame.transform.scale(consts.SAUCE_IMG, (20, 10))
-    screen.blit(SAUCE_IMG, (20, 30))
+def draw_message_recipe():
+    font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE_SMALL)
+    re_img = font.render(consts.MESSAGE_RECIPE, True, consts.COLOR)
+    screen.blit(re_img, consts.FONT_LOCATION_RECIPE)
+
