@@ -8,13 +8,13 @@ KITCHEN_IMG=pygame.image.load('kitchen.png')
 KITCHEN_SIZE=(WINDOW_WIDTH,WINDOW_HEIGHT)
 SAUCE_IMG=pygame.image.load('tomato sauce GIF.gif')
 
-EMPTY_SPOON_IMG=pygame.image.load('pouring/pouring-1.png')
+EMPTY_SPOON_IMG=pygame.image.load('scooping/scooping-1.png')
 FULL_SPOON_IMG=pygame.image.load('pouring/pouring-5.png')
 SPOON_WIDTH= EMPTY_SPOON_IMG.get_width()*0.1
 SPOON_HEIGHT=EMPTY_SPOON_IMG.get_height()*0.1
 SPOON_SIZE=(SPOON_WIDTH,SPOON_HEIGHT)
 SPOON_INITIAL_X=250
-SPOON_INITIAL_Y=50
+SPOON_INITIAL_Y=75
 SPOON_LOCATION=(SPOON_INITIAL_X,SPOON_INITIAL_Y)
 SPOON_SECOND_X=500
 SPOON_SECOND_Y=200
