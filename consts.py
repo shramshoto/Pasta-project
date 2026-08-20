@@ -29,9 +29,9 @@ FONT_LOCATION = (970, 70)
 FONT_LOCATION_RECIPE = (1000, 0)
 
 COLOR = (255, 255, 255)
+spoon_img = pygame.image.load('scooping-1.png')
 
-
-'''SPOON = {"width": image.get_width()*0.5, "height": image.get_height()*0.5, "obj_x":,"obj_y":,
+SPOON = {"width": spoon_img.get_width()*0.5, "height": spoon_img.get_height()*0.5, "obj_x":,"obj_y":,
 "animations": [Screen1.animate_scoop(), Screen1.spoon_move(), Screen1.spoon_pour()],
 "state": True}
-appearance = [SPOON]'''
+appearance = [SPOON]
