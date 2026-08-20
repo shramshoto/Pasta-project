@@ -29,7 +29,7 @@ def write():
 
 while running:
     pygame.init()
-    Screen1.draw_screen()
+    Screen1.drew_screen()
     Screen1.draw_empty_spoon()
     pygame.display.flip()
 
