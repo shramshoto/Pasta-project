@@ -18,6 +18,14 @@ def do_animation(list, num):
         if list[num]["state"]:
             list[num]["animations"][i]
 
+def write():
+    if event.key == pygame.K_1:
+        Screen1.draw_message_a()
+    elif event.key == pygame.K_2:
+        Screen1.draw_message_b()
+    elif event.key == pygame.K_3:
+        Screen1.draw_message_c()
+
 while running:
     pygame.init()
     pygame.display.flip()
@@ -29,17 +37,17 @@ while running:
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 mx, my = pygame.mouse.get_pos()
                 if mouse_clicking_obj(num, mx, my, consts.appearance):
-                    #do_animation(appearance)
+                    do_animation(consts.appearance)
                     num += 1
                 else:
                     pass
+            elif event.type == pygame.KEYDOWN:
+                write()
+
     else:
         running = False
 
     pygame.display.update()
-    '''Screen1.draw_message_a()
-        Screen1.draw_message_b()
-        Screen1.draw_message_c()'''
     clock.tick(60)
 
 pygame.quit()
