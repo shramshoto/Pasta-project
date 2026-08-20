@@ -9,7 +9,7 @@ LID=pygame.image.load('lid.png')
 SAUCE_IMG=pygame.image.load('tomato sauce GIF.gif')
 
 
-FONT_NAME = "Handjet"
+FONT_NAME = "Calibri"
 MESSAGE_A = "a"
 MESSAGE_B = "b"
 MESSAGE_C = "c"
