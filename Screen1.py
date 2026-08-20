@@ -1,7 +1,4 @@
 import pygame
-
-import pour_animation
-import scoop_animation
 import consts
 
 screen=pygame.display.set_mode((consts.WINDOW_WIDTH,consts.WINDOW_HEIGHT))
@@ -33,6 +30,8 @@ def draw_message_c():
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE)
     c_img = font.render(consts.MESSAGE_C, True, consts.COLOR)
     screen.blit(c_img, consts.FONT_LOCATION)
+    collage_img = pygame.transform.scale(consts.collage_img, consts.TOMATO_SIZE)
+    screen.blit(collage_img, (354, 347))
 
 def draw_message_recipe():
     pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(900, 10, 100, 200))
@@ -40,18 +39,18 @@ def draw_message_recipe():
     re_img = font.render(consts.MESSAGE_RECIPE, True, consts.COLOR)
     screen.blit(re_img, consts.FONT_LOCATION_RECIPE)
 
-def draw_sauce():
+
+def draw_empty_spoon():
     pygame.init()
-    SAUCE_IMG = pygame.transform.scale(consts.SAUCE_IMG, (20, 10))
-    screen.blit(SAUCE_IMG, (20, 30))
+    EMPTY_SPOON_IMG=pygame.transform.scale(consts.EMPTY_SPOON_IMG, consts.SPOON_SIZE)
+    screen.blit(EMPTY_SPOON_IMG, consts.SPOON_START_LOCATION)
 
-def animate_scoop():
-    consts.SPOON["state"] = True
-    scoop_animation.scoop_sprites.draw(screen)
-    scoop_animation.scoop_sprites.update()
+def draw_full_spoon():
+    pygame.init()
+    FULL_SPOON_IMG=pygame.transform.scale(consts.FULL_SPOON_IMG, consts.SPOON_SIZE)
+    screen.blit(FULL_SPOON_IMG, consts.SPOON_SECOND_LOCATION)
+    consts.SPOON['obj_x']=consts.SPOON_SECOND_LOCATION[0]
+    consts.SPOON['obj_y']=consts.SPOON_SECOND_LOCATION[1]
 
-def animate_pour():
-    consts.SPOON["state"] = True
-    pour_animation.pour_sprites.draw(screen)
-    pour_animation.pour_sprites.update()
+
 
