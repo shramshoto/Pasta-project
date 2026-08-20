@@ -28,7 +28,8 @@ class pour(pygame.sprite.Sprite):
 
         if self.current_sprite >= len(self.pour_sprites):
             self.current_sprite = 0
-            consts.state = True
+            consts.pouring = False
+
 
         self.image = self.pour_sprites[int(self.current_sprite)]
 
