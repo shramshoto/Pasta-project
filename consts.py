@@ -33,13 +33,20 @@ LID_RECT=LID_IMG.get_rect()
 #LID_SIZE=
 #LID_LOCATION=
 
-FONT_NAME = "Handjet"
-MESSAGE_A = "a"
-MESSAGE_B = "b"
-MESSAGE_C = "c"
-FONT_SIZE = int(0.1 * 500)
-FONT_LOCATION = (250, 300)
-COLOR = (255, 20, 8)
+FONT_NAME = "Calibri"
+MESSAGE_A = "א"
+MESSAGE_B = "ב"
+MESSAGE_C = "ג"
+MESSAGE_RECIPE = "מתכון"
+
+FONT_SIZE_SMALL = int(0.02 * 500)
+FONT_SIZE = int(0.05 * 500)
+
+FONT_LOCATION = (WINDOW_WIDTH/2, 180)
+FONT_LOCATION_RECIPE = (1000, 0)
+
+COLOR = (255, 255, 255)
+
 
 '''PASTA = {"width":PASTA_WIDTH, "height":PASTA_HEIGHT, "obj_x":PASTA_INITIAL_X, "obj_y":PASTA_INITIAL_Y}
 POT = {"width":POT_WIDTH, "height":POT_HEIGHT, "obj_x":POT_INITIAL_X, "obj_y":POT_INITIAL_Y}
