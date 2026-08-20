@@ -46,7 +46,9 @@ def draw_empty_spoon():
     EMPTY_SPOON_IMG=pygame.transform.scale(consts.EMPTY_SPOON_IMG, consts.SPOON_SIZE)
     screen.blit(EMPTY_SPOON_IMG, consts.SPOON_START_LOCATION)
 
-
+def drew_screen():
+    draw_kitchen()
+    draw_tomato()
 
 
 
