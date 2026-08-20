@@ -36,8 +36,8 @@ while running:
                 running = False
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 mx, my = pygame.mouse.get_pos()
-                if mouse_clicking_obj(num, mx, my, consts.appearance):
-                    do_animation(consts.appearance)
+                if mouse_clicking_obj(num, mx, my, spoon.SPOON):
+                    do_animation(spoon.SPOON, num)
                     num += 1
                 else:
                     pass
