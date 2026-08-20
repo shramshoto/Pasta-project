@@ -20,6 +20,8 @@ class pour(pygame.sprite.Sprite):
         pour.current_sprite = 0
         pour.image = pour.pour_sprites[pour.current_sprite]
 
+        pour.rect = pour.image.get_rect()
+        pour.rect.topleft = [pos_x, pos_y]
 
     def update(self):
         self.current_sprite += 0.1
@@ -31,5 +33,5 @@ class pour(pygame.sprite.Sprite):
         self.image = self.pour_sprites[int(self.current_sprite)]
 
 pour_sprites = pygame.sprite.Group()
-pour = pour(consts.SPOON_SECOND_X,consts.SPOON_SECOND_Y)
+pour = pour(consts.SPOON_SECOND_X, consts.SPOON_SECOND_Y)
 pour_sprites.add(pour)
