@@ -1,4 +1,4 @@
-import Screen1
+
 
 BACKGROUND_COLOR=(255,230,247)
 WINDOW_WIDTH=1000
@@ -39,13 +39,8 @@ MESSAGE_RECIPE = "מצרכים:\n פסטה,\n מים,\n מלח,\n לרוטב:\n 
 FONT_SIZE_SMALL = int(0.02 * 500)
 FONT_SIZE = int(0.05 * 500)
 
-FONT_LOCATION = (970, 70)
-FONT_LOCATION_RECIPE = (1000, 0)
-
+FONT_LOCATION = (70, 70)
+FONT_LOCATION_RECIPE = (910, 20)
 COLOR = (255, 255, 255)
 
 
-SPOON = {"width": SPOON_WIDTH, "height": SPOON_HEIGHT, "obj_x":SPOON_START_LOCATION[0],"obj_y":SPOON_START_LOCATION[1],
-"animations": [Screen1.animate_scoop(), Screen1.draw_full_spoon(), Screen1.animate_pour()],
-"state": True}
-appearance = [SPOON]
