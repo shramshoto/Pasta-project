@@ -71,9 +71,6 @@ FONT_LOCATION_RECIPE = (1000, 0)
 COLOR = (255, 255, 255)
 
 
-'''PASTA = {"width":PASTA_WIDTH, "height":PASTA_HEIGHT, "obj_x":PASTA_INITIAL_X, "obj_y":PASTA_INITIAL_Y}
-POT = {"width":POT_WIDTH, "height":POT_HEIGHT, "obj_x":POT_INITIAL_X, "obj_y":POT_INITIAL_Y}
-LID = {"width":, "height":, "obj_x":, "obj_y":}
-SPOON = {"width": image.get_width()*0.5, "height": image.get_height()*0.5, "obj_x":,"obj_y":,
+'''SPOON = {"width": image.get_width()*0.5, "height": image.get_height()*0.5, "obj_x":,"obj_y":,
 "animations": [Screen1.animate_scoop(), Screen1.spoon_move(), Screen1.spoon_pour()]}
 appearance = [SPOON]'''
