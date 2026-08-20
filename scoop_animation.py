@@ -31,13 +31,13 @@ class scoop(pygame.sprite.Sprite):
 
         if self.current_sprite >= len(self.scoop_sprites):
             self.current_sprite = 0
-            consts.SPOON["state"] = False
+            consts.state = False
 
         self.image = self.scoop_sprites[int(self.current_sprite)]
 
 
 scoop_sprites = pygame.sprite.Group()
-scoop =scoop(100, 100)
+scoop =scoop(consts.SPOON_INITIAL_X, consts.SPOON_INITIAL_Y)
 scoop_sprites.add(scoop)
 
 
