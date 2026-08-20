@@ -2,6 +2,7 @@ import pygame,sys
 import Screen1
 import consts
 
+
 pygame.init()
 clock = pygame.time.Clock()
 while True:
@@ -22,27 +23,25 @@ while True:
 # clock = pygame.time.Clock()
 running = True
 num = 0
-def mouse_clicking_obj(num, mx, my, list):
-    if list[num]["obj_x"]<mx<list[num]["obj_x"]+list[num]["width"] \
-        and list[num]["obj_y"]<my<list[num]["obj_y"]+list[num]["height"]:
-        num += 1
-        return True
-    return False
+max_num = len(consts.appearance)
 
-'''while running:
+while running:
     pygame.init()
     pygame.display.flip()
 
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-        elif event.type == pygame.MOUSEBUTTONDOWN:
-            mx, my = pygame.mouse.get_pos()
-            if mouse_clicking_obj(num, mx, my, consts.appearance):
-                #DO ANIMATION
-                pass
-            else:
-                pass
+    while num < max_num:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                mx, my = pygame.mouse.get_pos()
+                if mouse_clicking_obj(num, mx, my, consts.appearance):
+                    #do_animation(appearance)
+                    num += 1
+                else:
+                    pass
+    else:
+        running = False
 
 pygame.quit()'''
 
