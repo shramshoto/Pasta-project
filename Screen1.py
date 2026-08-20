@@ -19,21 +19,23 @@ def draw_tomato():
 def draw_message_a():
     pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(50, 50, 900, 400))
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE)
-    #font.align =
     a_img = font.render(consts.MESSAGE_A, True, consts.COLOR)
-    screen.blit(a_img, consts.FONT_LOCATION)
+    a_img_rect=a_img.get_rect(topright=consts.FONT_LOCATION)
+    screen.blit(a_img,a_img_rect)
 
 def draw_message_b():
     pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(50, 50, 900, 400))
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE)
     b_img = font.render(consts.MESSAGE_B, True, consts.COLOR)
-    screen.blit(b_img, consts.FONT_LOCATION)
+    b_img_rect = b_img.get_rect(topright=consts.FONT_LOCATION)
+    screen.blit(b_img, b_img_rect)
 
 def draw_message_c():
     pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(50, 50, 900, 400))
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE)
     c_img = font.render(consts.MESSAGE_C, True, consts.COLOR)
-    screen.blit(c_img, consts.FONT_LOCATION)
+    c_img_rect = c_img.get_rect(topright=consts.FONT_LOCATION)
+    screen.blit(c_img, c_img_rect)
     collage_img = pygame.transform.scale(consts.collage_img, consts.TOMATO_SIZE)
     screen.blit(collage_img, (330, 300))
 

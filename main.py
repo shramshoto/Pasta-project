@@ -43,7 +43,7 @@ while running:
     Screen1.drew_screen()
     Screen1.draw_empty_spoon()
     pygame.display.flip()
-    consts.scooping = True
+
 
     while True:
         for event in pygame.event.get():
@@ -51,11 +51,12 @@ while running:
                 running = False
 
             if event.type == pygame.MOUSEBUTTONDOWN:
-                do_animation()
+                consts.scooping = True
 
             if event.type == pygame.KEYDOWN:
                 write()
 
+        do_animation()
         pygame.display.update()
         clock.tick(60)
 

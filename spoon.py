@@ -19,7 +19,7 @@ def animate_pour():
     pour_animation.pour_sprites.draw(Screen1.screen)
     pygame.display.flip()
     pour_animation.pour_sprites.update()
-    consts.pouring=False
+
 
 
 def spoon_move():
@@ -35,5 +35,5 @@ def spoon_move():
 
 
 SPOON = {"width": consts.SPOON_WIDTH, "height":consts.SPOON_HEIGHT, "obj_x":consts.SPOON_LOCATION[0],
-         "obj_y":consts.SPOON_LOCATION[1],
-        "animations": [animate_scoop(),spoon_move(), animate_pour()]}
+         "obj_y":consts.SPOON_LOCATION[1]}
+'''"animations": [animate_scoop(),spoon_move(), animate_pour()]'''
