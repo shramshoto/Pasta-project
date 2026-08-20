@@ -1,5 +1,4 @@
 import pygame
-
 import pour_animation
 import scoop_animation
 import consts
