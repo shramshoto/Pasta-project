@@ -13,6 +13,11 @@ def mouse_clicking_obj(num, mx, my, list):
         return True
     return False
 
+def do_animation(list, num):
+    for i in range(len(list[num]["animations"])):
+        if list[num]["state"]:
+            list[num]["animations"][i]
+
 while running:
     pygame.init()
     pygame.display.flip()
@@ -39,7 +44,3 @@ while running:
 
 pygame.quit()
 
-
-def do_animation(list, num):
-    for i in range(len(list[num]["animations"])):
-        list[num]["animations"][i]
