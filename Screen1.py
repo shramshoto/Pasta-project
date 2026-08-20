@@ -17,6 +17,7 @@ def draw_tomato():
 def draw_message_a():
     pygame.draw.rect(screen, consts.BACKGROUND_COLOR, pygame.Rect(50, 50, 900, 400))
     font = pygame.font.SysFont(consts.FONT_NAME, consts.FONT_SIZE)
+    #font.align =
     a_img = font.render(consts.MESSAGE_A, True, consts.COLOR)
     screen.blit(a_img, consts.FONT_LOCATION)
 
